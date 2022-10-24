@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: rgb(43, 46, 74);
 }
 
 .App {
@@ -10,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(50, 50, 50);
 }
 
 .board {
@@ -17,6 +17,7 @@
   height: calc(64px * 8);
   display: flex;
   flex-wrap: wrap;
+  user-select: none;
 }
 
 .cell {
@@ -27,10 +28,27 @@
   align-items: center;
 }
 
+.cell img {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
 .black {
-  background-color: deepskyblue;
+  background-color: rgb(84, 156, 92);
 }
 
 .white {
   background-color: #eed4ac;
+}
+
+.selected {
+  background-color: rgb(213, 217, 75);
+}
+
+.available {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: rgb(75, 151, 217);
 }
